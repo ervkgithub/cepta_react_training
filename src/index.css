@@ -1,6 +1,6 @@
 body {
  padding: 0px 5px 0 15px;
- background-color: #ffcbcb;
+ background-color: #f3f1f1;
 }
 
 .todo_list_wrap{
@@ -11,10 +11,8 @@ body {
 .add_item_input input{
     padding: 10px;
     cursor: pointer;
-    border-radius: 6px;
     margin-bottom: 25px;
     width: 97%;
-    text-align:center;
     border: 0;
     outline: none;
 }
@@ -35,7 +33,7 @@ body {
 }
 
 .todo_list{
-  background: #e9d8d8;
+  background: #fff;
     padding: 10px;
     margin: 0px 0 5px 0px;
     width: 87%;
