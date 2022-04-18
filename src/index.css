@@ -1,6 +1,6 @@
 body {
  padding: 0px 5px 0 15px;
- background-color: #ccc;
+ background-color: #ffcbcb;
 }
 
 .todo_list_wrap{
@@ -15,6 +15,8 @@ body {
     margin-bottom: 25px;
     width: 97%;
     text-align:center;
+    border: 0;
+    outline: none;
 }
 
 .add_item_input .add_item_cta{
