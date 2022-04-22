@@ -5,12 +5,12 @@ import './index.css';
 // import Home from './Home';
 //import Counter from './component/Counter';
 // import ToDoAssignment from './component/ToDoAssignment';
-import FunComp from './component/FunComp';
-
+//import FunComp from './component/FunComp';
+import ComponentModal from './component/ComponentModal';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FunComp />
+    <ComponentModal />
   </React.StrictMode>,
   document.getElementById('root')
 );
