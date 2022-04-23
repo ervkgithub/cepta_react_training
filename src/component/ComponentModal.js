@@ -10,7 +10,8 @@ const ComponentModal = () =>{
     }
     return(
         <>
-           <button type='button' onClick={showModal}>Show Modal</button> <br></br><br></br>
+        <br></br><br></br>
+           <button type='button' onClick={showModal}>Show Modal</button> <br></br>
            {status && 
             <div className='modal'>
                 <div className='modal-content'>
