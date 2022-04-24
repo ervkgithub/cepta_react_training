@@ -1,27 +1,28 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
-const ComponentModal = () =>{
+const ComponentModal = () => {
     const [status, setStatus] = useState(false);
-    const showModal = () =>{
+    const showModal = () => {
         setStatus(status => true);
     }
-   const closeModal = ()=>{
+    const closeModal = () => {
         setStatus(status => false);
     }
-    return(
+    return (
         <>
-        <br></br><br></br>
-           <button type='button' onClick={showModal}>Show Modal</button> <br></br>
-           {status && 
-            <div className='modal'>
-                <div className='modal-content'>
-                    <div>Modal Title</div>
-                    <p>Modal Description</p>
-                    <br></br>
-                    <button type='button' onClick={closeModal}>Close</button>
+            <br></br>
+            <button className='btn btn-primary modal-btn' type='button' onClick={showModal}>Show Modal</button>
+            <br></br> <br></br>
+            {status &&
+                <div className='modal-custom'>
+                    <div className='modal-content-custom'>
+                        <div>Modal Title</div>
+                        <p>Modal Description</p>
+                        <br></br>
+                        <button className='btn btn-info' type='button' onClick={closeModal}>Close</button>
+                    </div>
                 </div>
-            </div>
-          }
+            }
         </>
     )
 }
