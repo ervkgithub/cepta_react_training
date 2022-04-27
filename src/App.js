@@ -9,6 +9,7 @@ import ToDoAssignment  from './component/ToDoAssignment';
 import ComponentModal  from './component/ComponentModal';
 import ComponentAPI  from './component/ComponentAPI';
 import FetchAPI  from './component/FetchAPI';
+import AccordionDemo  from './component/Accordion';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
                 <Route path='/todo' element = {<ToDoAssignment/>}/>
                 <Route path='/compapi' element = {<ComponentAPI/>}/>
                 <Route path='/fetchapi' element = {<FetchAPI/>}/>
+                <Route path='/accordemo' element = {<AccordionDemo/>}/>
+                
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>
