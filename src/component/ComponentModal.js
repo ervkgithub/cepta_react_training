@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Modal from '../common/Modal';
 
 const ComponentModal = () => {
     const [status, setStatus] = useState(false);
@@ -14,14 +15,7 @@ const ComponentModal = () => {
             <button className='btn btn-primary modal-btn' type='button' onClick={showModal}>Show Modal</button>
             <br></br> <br></br>
             {status &&
-                <div className='modal-custom'>
-                    <div className='modal-content-custom'>
-                        <div>Modal Title</div>
-                        <p>Modal Description</p>
-                        <br></br>
-                        <button className='btn btn-info' type='button' onClick={closeModal}>Close</button>
-                    </div>
-                </div>
+                <Modal closeModal={closeModal} />
             }
         </>
     )

@@ -10,6 +10,8 @@ import ComponentModal  from './component/ComponentModal';
 import ComponentAPI  from './component/ComponentAPI';
 import FetchAPI  from './component/FetchAPI';
 import AccordionDemo  from './component/Accordion';
+import FunToDoComponet from './component/FunToDoComponent';
+import './sass/Test.scss' 
 
 function App() {
   return (
@@ -30,7 +32,7 @@ function App() {
                 <Route path='/compapi' element = {<ComponentAPI/>}/>
                 <Route path='/fetchapi' element = {<FetchAPI/>}/>
                 <Route path='/accordemo' element = {<AccordionDemo/>}/>
-                
+                <Route path='/funtodolist' element = {<FunToDoComponet/>}/>
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>

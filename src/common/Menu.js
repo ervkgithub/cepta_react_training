@@ -16,6 +16,7 @@ const Menu = () => {
                         <Nav.Link><Link to="/compapi" className='btn btn-outline-success'>Fetch API 1</Link></Nav.Link>
                         <Nav.Link><Link to="/fetchapi" className='btn btn-outline-success'>Fetch API 2</Link></Nav.Link>
                         <Nav.Link><Link to="/accordemo" className='btn btn-outline-success'>Accordion Demo</Link></Nav.Link>
+                        <Nav.Link><Link to="/funtodolist" className='btn btn-outline-success'>Functional ToDOLIst</Link></Nav.Link>
                     </Navbar>
 
                 </div>

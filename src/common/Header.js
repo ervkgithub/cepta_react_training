@@ -5,7 +5,7 @@ const Header = () => {
         <>
             <div className='bg-success'>
                 <header className='header-wrap'>
-                    Header
+                    Component/Practice List
                 </header>
             </div>
         </>
