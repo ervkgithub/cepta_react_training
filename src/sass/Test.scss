@@ -1,3 +1,24 @@
 body{
     line-height: 1.2;
 }
+
+.digital-clock-wrap{
+    padding: 15px;
+    .dc-label{
+        padding-bottom: 15px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .date-time{
+        background: linear-gradient(45deg, black, transparent);
+        width: 125px;
+        text-align: center;
+        padding: 35px 15px 0 15px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 25px;
+        height: 125px;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+}

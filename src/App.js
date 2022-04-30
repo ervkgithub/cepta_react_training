@@ -11,6 +11,9 @@ import ComponentAPI  from './component/ComponentAPI';
 import FetchAPI  from './component/FetchAPI';
 import AccordionDemo  from './component/Accordion';
 import FunToDoComponet from './component/FunToDoComponent';
+import DigitalClock from './component/DigitalClocks';
+import DigitalClockClass from './component/ComponentDigitalClockClass';
+
 import './sass/Test.scss' 
 
 function App() {
@@ -33,6 +36,8 @@ function App() {
                 <Route path='/fetchapi' element = {<FetchAPI/>}/>
                 <Route path='/accordemo' element = {<AccordionDemo/>}/>
                 <Route path='/funtodolist' element = {<FunToDoComponet/>}/>
+                <Route path='/digiclock' element = {<DigitalClock/>}/>
+                <Route path='/digiclockclass' element = {<DigitalClockClass/>}/>
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>
