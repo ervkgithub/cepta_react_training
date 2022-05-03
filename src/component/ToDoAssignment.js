@@ -53,7 +53,7 @@ class ToDoAssignment extends Component {
         }
     }
 
-    // Add Food
+    // Add Place
 
     addPlace() {
         if (this.state.userInput !== '') {
@@ -91,15 +91,15 @@ class ToDoAssignment extends Component {
                         onChange={item => this.updateInput(item.target.value)}
                     />
                     <div className="cta_wrap">
-                    <div className="add_item_cta" onClick={() => this.addHobbies()}>
-                        ADD Hobbies
-                    </div>
-                    <div className="add_item_cta" onClick={() => this.addFood()}>
-                        ADD Foods
-                    </div>
-                    <div className="add_item_cta" onClick={() => this.addPlace()}>
-                        ADD Favorite Place
-                    </div>
+                        <div className="add_item_cta" onClick={() => this.addHobbies()}>
+                            ADD Hobbies
+                        </div>
+                        <div className="add_item_cta" onClick={() => this.addFood()}>
+                            ADD Foods
+                        </div>
+                        <div className="add_item_cta" onClick={() => this.addPlace()}>
+                            ADD Favorite Place
+                        </div>
                     </div>
                 </div>
                 <div>

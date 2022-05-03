@@ -1,6 +1,6 @@
 
 import { React } from 'react';
-import { Container, Row, Col, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Accordion, Modal, Button } from 'react-bootstrap';
 
 const AccordionDemo = () => {
 
@@ -58,6 +58,22 @@ const AccordionDemo = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
+
+                    <Modal.Dialog>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Modal title</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body>
+                        <p>Modal body text goes here.</p>
+                    </Modal.Body>
+
+                    <Modal.Footer>
+                        <Button variant="secondary">Close</Button>
+                        <Button variant="primary">Save changes</Button>
+                    </Modal.Footer>
+                    </Modal.Dialog>
+
                 </div>
                 <Container>
                     {/* Stack the columns on mobile by making one full-width and the other half-width */}

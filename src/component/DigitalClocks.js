@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 
 const DigitalClock = () => {
+    
     let time = new Date().toLocaleString();
     const [curTime, setCurTime] = useState(time);
 

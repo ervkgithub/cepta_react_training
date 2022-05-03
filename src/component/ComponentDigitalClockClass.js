@@ -5,25 +5,25 @@ class DigitalClockClass extends React.Component {
     constructor() {
         super();
         this.state = {
-            curr_time: new Date().toLocaleString(),
-        }
+            time: new Date().toLocaleString()
+        };
     }
-    componentDidUpdate = () => {
-        this.setState({
-            curr_time: this.state.curr_time
-        });
+    componentDidMount() {
+      setInterval(() => {
+            this.setState({
+                time: new Date().toLocaleString(),
+            });
+        }, 1000);
     }
-    componentWillUnmount = () => {
-        this.setState({
-            curr_time : 0
-        });
+    componentWillUnmount() {
+        clearInterval(this.intervalId);
     }
     render() {
         return (
             <>
                 <div className="digital-clock-wrap">
                     <div className="dc-label">Digital Clock Time Class: </div>
-                    <div className="date-time">{this.state.curr_time}</div>
+                    <div className="date-time">{this.state.time}</div>
                 </div>
             </>
         )
