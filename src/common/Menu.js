@@ -21,7 +21,8 @@ const Menu = () => {
                         <Nav.Link><Link to="/formfn" className='btn btn-outline-success'>Form Fn</Link></Nav.Link>
                         <Nav.Link><Link to="/emicalc" className='btn btn-outline-success'>EMI Calculator Class</Link></Nav.Link>
                         <Nav.Link><Link to="/contextdemo" className='btn btn-outline-success'>Context DEmo</Link></Nav.Link>
-                        {/* <Nav.Link><Link to="/emicalc" className='btn btn-outline-success'>EMI Calculator Class</Link></Nav.Link> */}
+                        <Nav.Link><Link to="/expensetracker" className='btn btn-outline-success'>Expense Tracker</Link></Nav.Link>
+                        <Nav.Link><Link to="/currencyconverter" className='btn btn-outline-success'>Currency Converter</Link></Nav.Link>
                         
                     </Navbar>
             </div>

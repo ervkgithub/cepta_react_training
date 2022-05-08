@@ -1,5 +1,7 @@
 
-import React, { useEffect, useState } from "react";
+import React, {useContext, useEffect, useState} from 'react';
+import { DataContext } from '../component/ExpenseTracker/DataContext';
+
 
 const FormFunctional = () => {
 
@@ -7,6 +9,7 @@ const FormFunctional = () => {
     const [formData, setFormData] = useState(tempFormData);
     const [formError, setFormError] = useState({});
     const [showMessage, setShowMessage] = useState(false);
+    const login_temp = useContext(DataContext);
 
     const handelFormInput = (e) => {
         validateForm(formData);
@@ -51,6 +54,15 @@ const FormFunctional = () => {
 
     return (
         <>
+            <div className='col-12'>
+                <button className="btn btn-primary btn-sm" onClick={login_temp.login}>
+                    {
+                        login_temp.appstate.loginstatus ? <span>Logout</span> : <span>Login</span>
+                    }
+                </button>
+                Welcome - {login_temp.appstate.loginstatus && login_temp.appstate.username}
+                </div>
+
             <div>Form Functional :</div>
             {(Object.keys(formError).length === 0 && showMessage) && <h1 className="text-success">Form Submitted Succesfully!</h1>}
             <form>

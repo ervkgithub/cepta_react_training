@@ -8,7 +8,7 @@ class ChildComp1 extends React.Component {
     render() {
         return (
             <>
-                ChildComp1 Component :
+                <br></br><br></br>
                 <ChildComp2 temp={this.props.temp} />
             </>
         )

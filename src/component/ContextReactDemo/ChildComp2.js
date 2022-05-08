@@ -1,16 +1,14 @@
 import React from "react";
+import ChildComp3 from "./ChildComp3";
 
 class ChildComp2 extends React.Component {
     constructor() {
         super();
-        this.state = {
-            temprature : 0
-        }
     }
     render() {
         return (
             <>
-                ChildComp2 Component :
+                <ChildComp3 temp={this.props.temp} />
             </>
         )
     }
