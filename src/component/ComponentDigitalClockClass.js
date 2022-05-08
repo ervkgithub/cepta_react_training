@@ -9,12 +9,17 @@ class DigitalClockClass extends React.Component {
         };
     }
     componentDidMount() {
-      setInterval(() => {
+        this.updateDate();
+    }
+
+    updateDate = () =>{
+        setInterval((intervalId) => {
             this.setState({
                 time: new Date().toLocaleString(),
             });
         }, 1000);
     }
+
     componentWillUnmount() {
         clearInterval(this.intervalId);
     }
@@ -22,7 +27,7 @@ class DigitalClockClass extends React.Component {
         return (
             <>
                 <div className="digital-clock-wrap">
-                    <div className="dc-label">Digital Clock Time Class: </div>
+                    <div className="dc-label">Digital Clock Class Component: </div>
                     <div className="date-time">{this.state.time}</div>
                 </div>
             </>

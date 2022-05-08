@@ -13,6 +13,9 @@ import AccordionDemo  from './component/Accordion';
 import FunToDoComponet from './component/FunToDoComponent';
 import DigitalClock from './component/DigitalClocks';
 import DigitalClockClass from './component/ComponentDigitalClockClass';
+import FormFunctional from './component/FormFn';
+import EMI from './component/EMICalculator/EMI';
+import Parent from './component/ContextReactDemo/Parent';
 
 import './sass/Test.scss' 
 
@@ -38,6 +41,10 @@ function App() {
                 <Route path='/funtodolist' element = {<FunToDoComponet/>}/>
                 <Route path='/digiclock' element = {<DigitalClock/>}/>
                 <Route path='/digiclockclass' element = {<DigitalClockClass/>}/>
+                <Route path='/formfn' element = {<FormFunctional/>}/>
+                <Route path='/emicalc' element = {<EMI/>}/>
+                <Route path='/contextdemo' element = {<Parent/>}/>
+                {/* <Route path='/expensetracker' element = {<ExpenseTracker/>}/> */}
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>

@@ -14,7 +14,7 @@ const DigitalClock = () => {
     return (
         <>
             <div className="digital-clock-wrap">
-                <div className="dc-label">Digital Clock Time: </div>
+                <div className="dc-label">Digital Clock Functional component: </div>
                 <div className="date-time">{curTime}</div>
             </div>
         </>

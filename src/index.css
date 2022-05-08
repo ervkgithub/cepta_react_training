@@ -98,3 +98,7 @@ button.btn.btn-info.btn-sm {
   margin: 10px 10px 10px 0;
 }
 
+.navbar-expand-lg{
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}

@@ -7,7 +7,6 @@ const Menu = () => {
     return (
         <>
             <div className='bg-info'>
-                <div className='container'>
                     <Navbar expand="lg">
                         <Nav.Link><Link to="/home" className='btn btn-outline-success'>Home</Link></Nav.Link>
                         <Nav.Link><Link to="/counter" className='btn btn-outline-success'>Counter</Link></Nav.Link>
@@ -17,12 +16,14 @@ const Menu = () => {
                         <Nav.Link><Link to="/fetchapi" className='btn btn-outline-success'>Fetch API 2</Link></Nav.Link>
                         <Nav.Link><Link to="/accordemo" className='btn btn-outline-success'>Accordion Demo</Link></Nav.Link>
                         <Nav.Link><Link to="/funtodolist" className='btn btn-outline-success'>Functional ToDOLIst</Link></Nav.Link>
-                        <Nav.Link><Link to="/digiclock" className='btn btn-outline-success'>Digital Clock</Link></Nav.Link>
+                        <Nav.Link><Link to="/digiclock" className='btn btn-outline-success'>Digital Clock Functional</Link></Nav.Link>
                         <Nav.Link><Link to="/digiclockclass" className='btn btn-outline-success'>Digital Clock Class</Link></Nav.Link>
+                        <Nav.Link><Link to="/formfn" className='btn btn-outline-success'>Form Fn</Link></Nav.Link>
+                        <Nav.Link><Link to="/emicalc" className='btn btn-outline-success'>EMI Calculator Class</Link></Nav.Link>
+                        <Nav.Link><Link to="/contextdemo" className='btn btn-outline-success'>Context DEmo</Link></Nav.Link>
+                        {/* <Nav.Link><Link to="/emicalc" className='btn btn-outline-success'>EMI Calculator Class</Link></Nav.Link> */}
                         
                     </Navbar>
-
-                </div>
             </div>
         </>
     )
