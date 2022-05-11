@@ -1,10 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import withHoc from './HOC';
 
 const states  = ['delhi', 'haryana', 'up', 'west bengal', 'bihar', 'mp', 'tamilnadu'];
 
 const HOC2 = (props) => {
-    const [states, setStates] = useState(['delhi', 'haryana', 'up', 'west bengal', 'bihar', 'mp', 'tamilnadu'])
         return(
             <>
                 <h4>Data from Filter HOC2</h4>
