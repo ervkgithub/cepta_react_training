@@ -18,6 +18,8 @@ import EMI from './component/EMICalculator/EMI';
 import Parent from './component/ContextReactDemo/Parent';
 import ExpenseTracker from './component/ExpenseTracker/ExpenseTracker';
 import CurrencyConverter from './component/CurrencyConverter/CurrencyConverter';
+import HOC1 from './component/hoc/HOC1';
+import HOC2 from './component/hoc/HOC2';
 
 import './sass/Test.scss'
 
@@ -48,7 +50,8 @@ function App() {
                 <Route path='/contextdemo' element={<Parent />} />
                 <Route path='/expensetracker' element={<ExpenseTracker />} />
                 <Route path='/currencyconverter' element={<CurrencyConverter />} />
-                
+                <Route path='/hoc1' element={<HOC1 />} />
+                <Route path='/hoc2' element={<HOC2 />} />
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>

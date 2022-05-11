@@ -63,3 +63,42 @@ form {
         margin-bottom: 20px;
     }
 }
+
+// Currency converter
+.curr-converter-wrap{
+  padding: 15px 15px 50px 15px;
+  background-color: darkblue;
+  h3{
+      color: #fff;
+  }
+  button{
+    width: 100% !important;
+    margin: 10px 0;
+    background-color: #f7e513;
+    border-color: #f7e513;
+    color: #000;
+}
+
+.curr-converter{
+    padding: 30px;
+}
+
+.curr-input-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    label{
+        margin-bottom: 5px;
+        color: #fff;
+    }
+    input, select{
+        height: 40px;
+        padding: 10px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+}
+}

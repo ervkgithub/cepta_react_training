@@ -23,6 +23,8 @@ const Menu = () => {
                         <Nav.Link><Link to="/contextdemo" className='btn btn-outline-success'>Context DEmo</Link></Nav.Link>
                         <Nav.Link><Link to="/expensetracker" className='btn btn-outline-success'>Expense Tracker</Link></Nav.Link>
                         <Nav.Link><Link to="/currencyconverter" className='btn btn-outline-success'>Currency Converter</Link></Nav.Link>
+                        <Nav.Link><Link to="/hoc1" className='btn btn-outline-success'>HOC1</Link></Nav.Link>
+                        <Nav.Link><Link to="/hoc2" className='btn btn-outline-success'>HOC2</Link></Nav.Link>
                         
                     </Navbar>
             </div>
