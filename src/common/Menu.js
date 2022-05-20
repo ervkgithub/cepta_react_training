@@ -26,7 +26,7 @@ const Menu = () => {
                     <Nav.Link><Link to="/hoc1" className='btn btn-outline-success'>HOC1</Link></Nav.Link>
                     <Nav.Link><Link to="/hoc2" className='btn btn-outline-success'>HOC2</Link></Nav.Link>
                    {/* <Nav.Link><Link to="/themeswitch" className='btn btn-outline-success'>Theme Switcher</Link></Nav.Link> */}
-                    <Nav.Link><Link to="/contextdemo2" className='btn btn-outline-success'>Context Demo 2</Link></Nav.Link>
+                    <Nav.Link><Link to="/contextdemo2" className='btn btn-outline-success'>Theme Switcher</Link></Nav.Link>
                     
                 </Navbar>
             </div>

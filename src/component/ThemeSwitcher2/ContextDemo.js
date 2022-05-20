@@ -6,8 +6,8 @@ export const MyContext = React.createContext();
  class ContextDemo extends Component {
      state = {
         darkTheme:"#101820FF",
-        redTheme:"#F96167",
-        blueTheme:"#4831D4",
+        redTheme:"#ffc0cb",
+        blueTheme:"#fffac0",
 
      }
 

@@ -21,10 +21,10 @@ import CurrencyConverter from './component/CurrencyConverter/CurrencyConverter';
 import HOC1 from './component/hoc/HOC1';
 import HOC2 from './component/hoc/HOC2';
 // import DataApp from '../src/component/ExpenseTracker/DataContext';
-import ThemeSwitcher from './component/ThemeSwitcher/Theme';
+// import ThemeSwitcher from './component/ThemeSwitcher/Theme';
 import './sass/Test.scss'
 import ThemeApp from './component/ThemeSwitcher/ThemeContext';
-import ContextDemo from './component/ContextDemo2/ContextDemo';
+import ContextDemo from './component/ThemeSwitcher2/ContextDemo';
 
 function App() {
   return (
