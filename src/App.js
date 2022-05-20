@@ -20,19 +20,23 @@ import ExpenseTracker from './component/ExpenseTracker/ExpenseTracker';
 import CurrencyConverter from './component/CurrencyConverter/CurrencyConverter';
 import HOC1 from './component/hoc/HOC1';
 import HOC2 from './component/hoc/HOC2';
-
+// import DataApp from '../src/component/ExpenseTracker/DataContext';
+import ThemeSwitcher from './component/ThemeSwitcher/Theme';
 import './sass/Test.scss'
+import ThemeApp from './component/ThemeSwitcher/ThemeContext';
+import ContextDemo from './component/ContextDemo2/ContextDemo';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <main>
+      <ThemeApp />
         <Menu />
         <div className='container'>
           <div className='row'>
             <div className='col-lg-1 bg-success'>Left</div>
-            <div className='col-sm-10 col-lg-10 bg-light main-wrapper'>
+            <div className='col-sm-10 col-lg-10 main-wrapper'>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/home' element={<Home />} />
@@ -52,6 +56,8 @@ function App() {
                 <Route path='/currencyconverter' element={<CurrencyConverter />} />
                 <Route path='/hoc1' element={<HOC1 />} />
                 <Route path='/hoc2' element={<HOC2 />} />
+                {/* <Route path='/themeswitch' element={<ThemeSwitcher />} /> */}
+                <Route path='/contextdemo2' element={<ContextDemo />} />
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>
@@ -59,6 +65,7 @@ function App() {
         </div>
       </main>
       <Footer />
+      <ThemeApp />
     </BrowserRouter>
 
   );

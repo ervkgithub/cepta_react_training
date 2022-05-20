@@ -5,11 +5,10 @@ const CurrencyConverter = () => {
   let fromArr = ["USD", "EUR", "COP"];
   let toArr = ["CAD", "BRL", "BTN"];
 
-  const [convertedAmount, setConvertedAmount] = useState(0);
   const [currAmount, setCurrAmount] = useState(0);
-  const [currFrom, setCurrFrom] = useState();
-  const [currTo, setCurrTo] = useState();
-
+  const [currFrom, setCurrFrom] = useState("USD");
+  const [currTo, setCurrTo] = useState("CAD");
+  const [convertedAmount, setConvertedAmount] = useState(0);
 
   const handleCurrencyAmount = (e) => {
     console.log("handleCurrencyAmount", e.target.value);
@@ -79,9 +78,6 @@ const CurrencyConverter = () => {
               }
             </select>
           </div>
-          {/* <div>
-          <button type='button' className='btn btn-info text-center'>Reverse</button>
-          </div> */}
           <div className='curr-input-wrap'>
             <label>To</label>
             <select onChange={handleCurrencyTO}>

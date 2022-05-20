@@ -102,3 +102,41 @@ form {
     }
 }
 }
+
+// Theme Switcher
+
+.theme-switcher-wrap{
+    button{
+        margin-right: 30px;
+    }
+}
+
+
+// Theme Switcher
+
+.dark-cta{
+    background-color: #101820FF;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.red-cta{
+    background-color: #F96167;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.blue-cta{
+    background-color: #4831D4;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    outline: 0;
+    border: 0;
+}
