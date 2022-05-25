@@ -65,57 +65,57 @@ form {
 }
 
 // Currency converter
-.curr-converter-wrap{
-  padding: 15px 15px 50px 15px;
-  background-color: darkblue;
-  h3{
-      color: #fff;
-  }
-  button{
-    width: 100% !important;
-    margin: 10px 0;
-    background-color: #f7e513;
-    border-color: #f7e513;
-    color: #000;
-}
-
-.curr-converter{
-    padding: 30px;
-}
-
-.curr-input-wrap{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    label{
-        margin-bottom: 5px;
+.curr-converter-wrap {
+    padding: 15px 15px 50px 15px;
+    background-color: darkblue;
+    h3 {
         color: #fff;
     }
-    input, select{
-        height: 40px;
-        padding: 10px;
-        border-radius: 6px;
-        outline: none;
-        border: 1px solid #ccc;
-        cursor: pointer;
+    button {
+        width: 100% !important;
+        margin: 10px 0;
+        background-color: #f7e513;
+        border-color: #f7e513;
+        color: #000;
     }
-}
+
+    .curr-converter {
+        padding: 30px;
+    }
+
+    .curr-input-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        label {
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        input,
+        select {
+            height: 40px;
+            padding: 10px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    }
 }
 
 // Theme Switcher
 
-.theme-switcher-wrap{
-    button{
+.theme-switcher-wrap {
+    button {
         margin-right: 30px;
     }
 }
 
-
 // Theme Switcher
 
-.dark-cta{
-    background-color: #101820FF;
+.dark-cta {
+    background-color: #101820ff;
     color: #fff;
     padding: 15px 30px;
     margin: 10px;
@@ -123,7 +123,7 @@ form {
     border: 0;
 }
 
-.red-cta{
+.red-cta {
     background-color: #ffc0cb;
     color: #000;
     padding: 15px 30px;
@@ -132,7 +132,7 @@ form {
     border: 0;
 }
 
-.blue-cta{
+.blue-cta {
     background-color: #fffac0;
     color: #000;
     padding: 15px 30px;
@@ -140,3 +140,58 @@ form {
     outline: 0;
     border: 0;
 }
+
+// Weather App
+
+.weather-wrap {
+    background-color: #1e1e4e;
+    color: #fff;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 60px;
+    .weather-search-wrap{
+        margin: 20px 0 40px 0;
+        input{
+            background: transparent;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #fff;
+            height: 40px;
+            padding: 0 40px 0 0;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .weather-cards {
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        color: #000;
+        text-align: left;
+        margin: 0 0 30px 0;
+        h4, .degree, span, p{
+            margin-bottom: 15px;
+        }
+        .degree{
+            font-size: 80px;
+        }
+        sup{
+            font-size:20px;
+            position:relative;
+            top:-40px;
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #fff;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::placeholder {
+    color: #fff;
+  }

@@ -25,6 +25,9 @@ import HOC2 from './component/hoc/HOC2';
 import './sass/Test.scss'
 import ThemeApp from './component/ThemeSwitcher/ThemeContext';
 import ContextDemo from './component/ThemeSwitcher2/ContextDemo';
+import WeatherApp from './component/WeatherApp/WeatherApp';
+import ContactApp from './component/CRUD_API_JSON_Server/ContactApp';
+import NotFound from './common/NotFound';
 
 function App() {
   return (
@@ -38,7 +41,9 @@ function App() {
             <div className='col-lg-1 bg-success'>Left</div>
             <div className='col-sm-10 col-lg-10 main-wrapper'>
               <Routes>
+                {/*Default route*/}
                 <Route path='/' element={<Home />} />
+                {/*Default route*/}
                 <Route path='/home' element={<Home />} />
                 <Route path='/counter' element={<Counter />} />
                 <Route path='/compmodal' element={<ComponentModal />} />
@@ -56,8 +61,23 @@ function App() {
                 <Route path='/currencyconverter' element={<CurrencyConverter />} />
                 <Route path='/hoc1' element={<HOC1 />} />
                 <Route path='/hoc2' element={<HOC2 />} />
+                <Route path='/jsonserver' element={<ContactApp />} />
                 {/* <Route path='/themeswitch' element={<ThemeSwitcher />} /> */}
                 <Route path='/contextdemo2' element={<ContextDemo />} />
+                <Route path='/apijsonserver' element={<WeatherApp />} />
+                <Route path='/weatherapp' element={<WeatherApp />} />
+
+                {/*Nested route*/}
+                <Route path="/apps" element={<ContactApp />} />
+                <Route path='apps'>
+                  <Route path="apps1" element={<CurrencyConverter />} />
+                  <Route path="apps2" element={<ContextDemo />} />
+                </Route>
+                {/*Nested route*/}
+
+                {/* 404/Page Not Found route*/}
+                <Route path="*" element={<NotFound />} />
+                {/*404/Page Not Found route*/}
               </Routes>
             </div>
             <div className='col-lg-1 bg-success'>Aside</div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Child from './Child';
+// import Child from './Child';
 import { MyContext } from './ContextDemo';
 class Parent extends Component {
     render() {
@@ -15,7 +15,6 @@ class Parent extends Component {
                         </>
                     )}
                 </MyContext.Consumer>
-                <Child />
             </>
         )
     }

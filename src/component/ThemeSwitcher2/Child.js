@@ -9,7 +9,7 @@ class Child extends Component {
                 <MyContext.Consumer>
                     {({ data, setBGDark, setBGRed, setBGBlue }) => (
                         <>
-                             <button className='dark-cta' onClick={setBGDark}>Set BG Dark</button>
+                            <button className='dark-cta' onClick={setBGDark}>Set BG Dark</button>
                             <button className='red-cta' onClick={setBGRed}>Set BG Pink</button>
                             <button className='blue-cta' onClick={setBGBlue}>Set BG Yellow</button>
                         </>
