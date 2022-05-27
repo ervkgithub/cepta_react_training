@@ -5,7 +5,9 @@ const WeatherCards = (props) => {
     return(
         <>
             <div className="weather-cards">
-                <h4>{props.weatheralldata.data.location.name}</h4>
+                {
+                props.searchcity ? <h3>{props.searchcity}</h3> : <h3>London</h3>
+                }
                 <div className="degree">{props.weatheralldata.data.current.temp_c}<sup>0 C</sup></div>
                 <img src={props.weatheralldata.data.current.condition.icon} alt="icon" />
                 <p>{props.weatheralldata.data.current.condition.text}</p>

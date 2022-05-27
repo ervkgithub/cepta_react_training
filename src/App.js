@@ -66,7 +66,6 @@ function App() {
                 <Route path='/contextdemo2' element={<ContextDemo />} />
                 <Route path='/apijsonserver' element={<WeatherApp />} />
                 <Route path='/weatherapp' element={<WeatherApp />} />
-
                 {/*Nested route*/}
                 <Route path="/apps" element={<ContactApp />} />
                 <Route path='apps'>
