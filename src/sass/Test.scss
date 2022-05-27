@@ -146,7 +146,7 @@ form {
 .weather-wrap {
     background-color: #1e1e4e;
     color: #fff;
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     padding: 30px 60px;
@@ -158,9 +158,10 @@ form {
             outline: 0;
             border-bottom: 1px solid #fff;
             height: 40px;
-            padding: 0 40px 0 0;
             color: #fff;
             cursor: pointer;
+            text-align: center;
+            width: 80%;
         }
     }
     .weather-cards {
@@ -170,16 +171,26 @@ form {
         color: #000;
         text-align: left;
         margin: 0 0 30px 0;
+        box-shadow: 1px 30px 0px -15px #1fafa7;
+        h3{
+            color: #6c6c6c;
+        }
         h4, .degree, span, p{
             margin-bottom: 15px;
         }
         .degree{
-            font-size: 80px;
+            font-size: 60px;
+            font-weight: bold;
         }
         sup{
             font-size:20px;
             position:relative;
-            top:-40px;
+            top:-30px;
+        }
+        p{
+            color: #99a599;
+            margin-top: 10px;
+            font-weight: 500;
         }
     }
 }
