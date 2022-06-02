@@ -12,10 +12,20 @@ const WeatherApp = () => {
     const handleSearch = (e) => {
         setSearchCity(e.target.value);
         console.log("searchcity", searchcity);
-        setLattitude(lattitude => weatherdata.data.location.lat);
-        setLongitude(longitude => weatherdata.data.location.lon);
+      
         console.log("setLattitude", lattitude);
         console.log("setLongitude", longitude);
+        if(e.target.value === ""){
+            setLattitude(lattitude => 51.52);
+            setLongitude(longitude => 0.12);
+            setSearchCity("London");
+            console.log("if")
+        }
+        else{
+            setLattitude(lattitude => weatherdata.data.location.lat);
+            setLongitude(longitude => weatherdata.data.location.lon);
+            console.log("else")
+        }
     }
 
     useEffect(() => {
@@ -28,6 +38,7 @@ const WeatherApp = () => {
                 'X-RapidAPI-Key': '5a1042ca4cmsh594219d84e8fabap111938jsn2079b1264b60'
             }
         };
+        console.log(lattitude, longitude)
         axios.request(options)
             .then((response) => {
                 console.log(response)
@@ -45,7 +56,7 @@ const WeatherApp = () => {
                 <h2>Simple Weather App</h2>
                 <div className='row'>
                     <div className="weather-search-wrap">
-                        <input type="text" id="search" onChange={handleSearch} placeholder="Search City" />
+                        <input type="text" id="search" onChange={handleSearch} placeholder="Search for a City" />
                         {/* <button className="btn btn-danger" type="button" onChange={handleSearch}>Submit</button> */}
                     </div>
                 </div>
