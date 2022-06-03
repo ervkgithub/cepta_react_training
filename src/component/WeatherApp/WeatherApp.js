@@ -56,7 +56,7 @@ const WeatherApp = () => {
                 <h2>Simple Weather App</h2>
                 <div className='row'>
                     <div className="weather-search-wrap">
-                        <input type="text" id="search" onChange={handleSearch} placeholder="Search for a City" />
+                        <input type="text" id="search" className='search' onChange={handleSearch} placeholder="Search for a City" />
                         {/* <button className="btn btn-danger" type="button" onChange={handleSearch}>Submit</button> */}
                     </div>
                 </div>
